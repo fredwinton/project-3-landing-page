@@ -1,7 +1,5 @@
 html, body {
   background: #1A1626;
-  background-image: url('../images/money.jpg');
-  background-repeat:none;
   background-position: 500px;
   height:100%;
   width:100%;
@@ -18,10 +16,16 @@ html {
   box-sizing: inherit;
 }
 
+.about {
+	color: white;
+}
 .body-wrap {
   background: #F2F2F2;
+  background-image: url('../images/money.jpg');
+  background-size: cover;
   margin: 0 auto;
-  width: 800px;
+  width: vw;
+  height: vh;
 }
 
 h1 {
