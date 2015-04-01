@@ -1,5 +1,5 @@
 html, body {
-  background: #1A1626;
+  background: #E8E8E8;
   background-position: 500px;
   height:100%;
   width:100%;
@@ -19,13 +19,49 @@ html {
 .about {
 	color: white;
 }
-.body-wrap {
+
+.about h2 {
+  color: white;
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center; 
+}
+
+.about p {
+    color: white;
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+
+}
+
+.wrapper {
+	width: 100%;
+	position: relative;
+}
+
+.top-wrap {
+  position: relative;
   background: #F2F2F2;
-  background-image: url('../images/money.jpg');
+  background-image: url('../images/homepage.jpg');
   background-size: cover;
   margin: 0 auto;
   width: vw;
   height: vh;
+}
+
+.middle {
+	position: relative;
+	  top: 50%;
+   transform: translateY(-50%);
+   text-align: center;
+ }
+
+.what {
+   position: relative;
+ 
 }
 
 h1 {
@@ -78,7 +114,7 @@ nav p {
 /* Nav */
 
 nav, footer {
-  background: #E04A50;
+  background: black;
   color: white;
   padding: 20px;
   font-family: 'Pacifico', cursive;
