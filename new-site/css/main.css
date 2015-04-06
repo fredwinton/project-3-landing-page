@@ -12,6 +12,11 @@ html {
   box-sizing: border-box;
 }
 
+.wrapper {
+	width:80%;
+	 margin: 0 auto;
+}
+	
 .top-wrap {
   background-image: linear-gradient(
       rgba(255, 0, 0, 0.45), 
@@ -40,7 +45,11 @@ html {
 
 .about p {
   color: white;
-	text-align: center;
+  text-align: center;
+}
+
+.mc_signup {
+ text-align: center;
 }
 
 .middle {
@@ -57,29 +66,28 @@ html {
 }
 
 .howitworks {
-	height:200px;
- 	width: 100%;
+  height:200px;
+  width: 100%;
 }
 
 .col1 {
   position: relative;
-  float:left; width:33%;
-  text-align: center;
+  float:left; 
+  width:33%;
 }
 
 .col2 {
   position: relative;
   float:left; width:33%;
-  text-align: center;
 }
 
 .col3 {
   position: relative;
   float:left; width:33%;
-  text-align: center;
 }
-
+	
 .money {
+  margin: 0 auto;
   background-color: #D8D8D8;
   left:100px;
   width: 200px;
@@ -117,6 +125,7 @@ html {
 }
 
 .receive {
+  margin: 0 auto;
   background-color: #D8D8D8;
   left:100px;
   width: 200px;
@@ -138,13 +147,13 @@ html {
 
 .receive:hover p.hover {
   display: block;
-  opacity: 1;
-    font-size: 13px;
-    color: #660033;
-    text-shadow: 20px 20px 50px #222222;
+  font-size: 13px;
+  color: #660033;
+  text-shadow: 20px 20px 50px #222222;
 }
 
 .repeat {
+  margin: 0 auto;
   background-color: #D8D8D8;
   left:100px;
   width: 200px;
@@ -155,7 +164,6 @@ html {
   border-color:black;
   border-width: 2px;
   border-radius: 100%;
-
 }
 
 .repeat p {
@@ -190,13 +198,13 @@ section {
   width: 100%;
 }
 
-input, button {
-  height: 40px;
+input {
+  height: 25px;
+  width:300px;
 }
 
-input {
-  padding: 0 10px;
-  width: 300px;
+.button {
+  width:75px
 }
 
 h2 {
@@ -235,47 +243,68 @@ footer p {
   margin: 0;
 }
 
-@media (max-width: 1200px) {
-/*     .goldi-locks .fa-meh-o {
-        display:none;
-    }
-  
-    .goldi-locks .fa-smile-o {
-        display:none;
-    }
-  
-    .goldi-locks .fa-frown-o {
-        display:block;
-    }
- */  
+@media and (min-device-width: 1025px) 
+			and (max-device-width: 1900px) {
+	.col1 {
+	  position: relative;
+	  float:left; width:33%;
+	}
+
+	.col2 {
+	  position: relative;
+	  float:left; width:33%;
+	}
+
+	.col3 {
+	  position: relative;
+	  float:left; width:33%;
+	}
 }
 
-@media (max-width: 991px) {
- /*    .goldi-locks .fa-meh-o {
-        display:block;
-    }
-  
-    .goldi-locks .fa-smile-o {
-        display:none;
-    }
-  
-    .goldi-locks .fa-frown-o {
-        display:none;
-    }
-   */
+@media screen 	and (min-device-width: 768px) 
+				and (max-device-width: 1024px)  {
+
+	.wrapper {
+		width:100%;
+		margin: 0 auto;
+	}
+	.col1 {
+	  position: relative;
+	  float:left; width:33%;
+	}
+
+	.col2 {
+	  position: relative;
+	  float:left; width:33%;
+	}
+
+	.col3 {
+	  position: relative;
+	  float:left; width:33%;
+	}
+
 }
 
-@media (max-width: 768px) {
- /*    .goldi-locks .fa-meh-o {
-        display:none;
-    }
-  
-    .goldi-locks .fa-smile-o {
-        display:block;
-    }
-  
-    .goldi-locks .fa-frown-o {
-        display:none;
-    } */
-  
+@media screen 
+	and (min-width: 320px) 
+	and (max-width: 480px) {
+	.wrapper {
+		width:100%;
+		margin: 0 auto;
+	}
+	
+	.col1 {
+	  position: relative;
+	  clear: both;
+	}
+
+	.col2 {
+	  position: relative;
+	  clear: both;
+	}
+
+	.col3 {
+	  position: relative;
+	  clear: both;
+	}
 }
